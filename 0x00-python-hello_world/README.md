@@ -1,50 +1,92 @@
-# C - Hello, World
+# Python - Hello, World
 
-In this project, I learned about compilation using `gcc`, entry
-points using `main`, and text-printing functions in C.
+In this project, I practiced using the python interpreter, printing text
+and variables, indexing and slicing strings in Python.
+
+## Function Prototypes :floppy_disk:
+
+Prototypes for functions written in this project:
+
+| File                       | Prototype                             |
+| -------------------------- | ------------------------------------- |
+| `10-check_cycle.c`         | `int check_cycle(listint_t *list);`   |
+| `102-magic_calculation.py` | `def magic_calculation(a, b):`        |
 
 ## Tasks :page_with_curl:
 
-* **0. Preprocessor**
-  * [0-preprocessor](./0-preprocessor): Bash script that runs a C file saved in the
-  variable `$CFILE` through the preprocessor and saves the result in the file `c`.
+* **0. Run Python File**
+  * [0-run](./0-run): Bash script that runs a Python script file saved
+  in the environment variable `$PYFILE`.
 
-* **1. Compiler**
-  * [1-compiler](./1-compiler): Bash script that compiles a C file saved in the
-  variable `$CFILE` that does not link; saves the result in an output file of the
-  same name but with a `.o` extension.
-    * Example: If the C file is `main.c`, the output is `main.o`.
+* **1. Run inline**
+  * [1-run_inline](./1-run_inline): Bash script that runs Python code saved in the
+  environment variable `$PYCODE`.
 
-* **2. Assembler**
-  * [2-assembler](./2-assembler): Bash script that generates the assembly code of a
-  C code saved in the variable `$CFILE`; saves the result in an output file of the
-  same name but with a `.s` extension.
-    * Example: If the C file is `main.c`, the result is `main.s`.
+* **2. Hello, print**
+  * [2-print.py](./2-print.py): Python script that prints exactly `"Programming is
+  like building a multilingual puzzle`, followed by a new line using the function `print`.
 
-* **3. Name**
-  * [3-name](./3-name): Bash Script that compiles a C file saved in the variable
-  `$CFILE` and creates an executable `cisfun`.
+* **3. Print integer**
+  * [3-print_number.py](./3-print_number.py): Python script that prints the integer stored
+  in the variable `number`, followed by `Battery street`, followed by a new line.
+  * Completion of [this source code](https://github.com/holbertonschool/0x00.py/blob/master/3-print_number.py).
 
-* **4. Hello, puts**
-  * [4-puts.c](./4-puts.c): C program that prints exactly `"Programming is like building
-  a multilingual puzzle`, followed by a new line, using the function `puts`.
+* **4. Print float**
+  * [4-print_float.py](./4-print_float.py): Python script that prints the float stored
+  in the variable `number` with a precision of two digits.
+  * Completion of [this source code](https://github.com/holbertonschool/0x00.py/blob/master/4-print_float.py).
 
-* **5. Hello, printf**
-  * [5-printf.c](./5-printf.c): C program that prints exactly `with proper grammer, but
-  the outcome is a piece of art,`, followed by a new line, using the function `printf`.
+* **5. Print string**
+  * [5-print_string.py](./5-print_string.py): Python script that prints a string stored
+  in the variable `str` three times, then a new line, then the first nine characters
+  contained in `str`, followed by another new line.
+  * Completion of [this source code](https://github.com/holbertonschool/0x00.py/blob/master/5-print_string.py).
 
-* **6. Size is not grandeur, and territory does not make a nation**
-  * [6-size.c](./6-size.c): C program that prints the size of various types on the computer
-  it is compiled and run on.
+* **6. Play with strings**
+  * [6-concat.py](./6-concat.py): Python script that prints `Welcome to Holberton
+  School!` using the variables `str1 = "Holberton"` and `str2 = "School"`.
+  * Completion of [this source code](https://github.com/holbertonschool/0x00.py/blob/master/6-concat.py).
 
-* **7. Intel**
-  * [100-intel](./100-intel): Script that generates the assembly code in Intel syntax of a
-  C file saved in the variable $CFILE; saves the result in an output file of the same name
-  but with a `.s` extension.
-    * Example: If the C file is `main.c`, the output is `main.s`.
+* **7. Copy - Cut - Paste**
+  * [7-edges.py](./7-edges.py): Python script that sets three string variables based
+  on the string contained in the variable `word` as follows:
+  * `word_first_3`: Contains the first three letters of the variable `word`.
+  * `word_last_2`: Contains the last two letters of the variable `word`.
+  * `middle_word`: Contains the value of the variable `word` without the first and last letters.
+  * Completion of [this source code](https://github.com/holbertonschool/0x00.py/blob/master/7-edges.py).
 
-* **8. UNIX is basically a simple operating system, but you have to be a genius to understand the simplicity**
-  * [101-quote.c](./101-quote.c): C program that prints exactly `and that piece of art is
-  useful" - Dora Korpar, 2015-10-19`, followed by a new line, to the standard error,
-  without using any functions listed in the NAME sesction of the man(3) `printf` or man(3)
-  `puts`.
+* **8. Create a new sentence**
+  * [8-concat_edges.py](./8-concat_edges.py): Python script that prints `object-oriented
+  programming with Python`, followed by a new line without creating new variables or
+  string literals.
+  * Completion of [this source code](https://github.com/holbertonschool/0x00.py/blob/master/8-concat_edges.py).
+
+* **9. Easter Egg**
+  * [9-easter_egg.py](./9-easter_egg.py): Python script that prints "The Zen of Python" by
+  Tim Peters, followed by a new line.
+
+* **10. Linked list cycle**
+  * [10-check_cycle.c](./10-check_cycle.c): C function that checks if a linked list
+  contains a cycle.
+  * Returns `0` if there is no cycle and `1` if there is.
+  * Helper files:
+    * [linked_lists.c](./linked_lists.c): C functions handling linked lists for testing
+    [10-check_cycle.c](./10-check_cycle.c) (provided by Holberton School).
+    * [lists.h](./lists.h): Header file containing definitions and prototypes for
+    all types and functions used in [linked_lists.c](./linked_lists.c) and
+    [10-check_cycle.c](./10-check_cycle.c).
+
+* **11. Hello, write**
+  * [100-write.py](./100-write.py): Python script that prints exactly `and that piece of
+  art is useful - Dora Korpar, 2015-10-19`, followed by a new line to `stderr` using
+  the function `write` from the `sys` module.
+  * Exits with a status code of `1`.
+
+* **12. Compile**
+  * [101-compile](./101-compile): Python script that compiles a Python script file stored
+  in the environment variable `$PYFILE` and saves it to an output file
+  `$PYFILEc` (ex. `export PYFILE=my_main.py` => output filename: `my_main.pyc`).
+
+* **13. ByteCode -> Python #1**
+  * [102-magic_calculation.py](./103-magic_calculation.py): Python function matching exactly
+  a bytecode provided by Holberton School.
