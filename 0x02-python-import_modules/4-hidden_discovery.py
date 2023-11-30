@@ -1,4 +1,3 @@
-
 #!/usr/bin/python3
 # 4-hidden_discovery.py
 # Nason Mamu
