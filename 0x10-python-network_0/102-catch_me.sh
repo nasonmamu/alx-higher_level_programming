@@ -1,3 +1,4 @@
 #!/bin/bash
-# Makes a request to 0.0.0.0:5000/catch_me that gets the message "You got me!".
-curl -sL -X PUT -H "Origin: AlxSchool" -d "user_id=98" 0.0.0.0:5000/catch_me
+
+# Send PUT request to 0.0.0.0:5000/catch_me with user_id set to 98 and Origin header set to HolbertonSchool
+curl -s -X PUT "0.0.0.0:5000/catch_me" -d "user_id=98" -H "Origin: HolbertonSchool"
